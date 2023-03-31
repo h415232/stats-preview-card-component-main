@@ -1,11 +1,125 @@
 /* CSS STYLE */
+body {
+    background-color: #0A0C1B;
+    font-family: 'Inter', sans-serif; 
+}
 
+.main {
+    height: 100vh;
+    overflow-x: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    background-color: #1C1938;
+
+    width: 70rem;
+    height: 27.875rem;
+
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+/* Card Information Style */
+
+.card-info {
+    padding: 4rem 4rem 4rem 3rem;
+}
+
+/* Card Title Style */
+
+.card-info-title h1 {
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.05rem;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.class-info-title-highlight {
+    color: hsl(277, 64%, 61%);
+}
+
+/* Card Desc Style*/
+
+.card-info-desc p {
+    color: hsla(0, 0%, 100%, 0.65);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Card Stats Style */
+
+.card-info-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 3rem;
+}
+
+.card-info-stats p {
+    font-family: 'Lexend Deca', sans-serif; 
+}
+
+.card-info-stats-head {
+    color: hsla(0, 0%, 100%, 0.95);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.card-info-stats-foot {
+    color: hsla(0, 0%, 100%, 0.65);
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+
+/* Banner Image Style */
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/image-header-desktop.jpg);
+    position: relative;
+}
+
+.card-img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(168, 88, 218, 0.6);
+}
+
+.card-img-overlay {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    background-color: rgba(168, 88, 218, 0.3);
+}
 
 /* Footer */
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    color: rgba(250, 250, 250,0.5);
 }
 
 .attribution a { 
